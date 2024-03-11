@@ -15,7 +15,7 @@ function addTodo(event) {
   //prevent from refresing the webpage
   event.preventDefault();
 
-  //Todo DIv
+  //Todo Div
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
 
@@ -34,7 +34,7 @@ function addTodo(event) {
   completedButton.classList.add("complete-btn");
   todoDiv.appendChild(completedButton);
 
-  //Check Mark Button
+  //Check Delete Button
   const trashButton = document.createElement("button");
   trashButton.innerHTML = '<i class="fas fa-trash" ></i>';
   trashButton.classList.add("trash-btn");
@@ -115,7 +115,7 @@ function getTodos(){
     todos = JSON.parse(localStorage.getItem("todos"));
   }
     todos.forEach(function(todo){
-        //Todo DIv
+        //Todo Div
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
 
@@ -133,7 +133,7 @@ function getTodos(){
   completedButton.classList.add("complete-btn");
   todoDiv.appendChild(completedButton);
 
-  //Check Mark Button
+  //Check Delete Button
   const trashButton = document.createElement("button");
   trashButton.innerHTML = '<i class="fas fa-trash" ></i>';
   trashButton.classList.add("trash-btn");
